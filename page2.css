@@ -5,6 +5,7 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
     width: 100%;  height: 100%;
+    overflow:hidden;
 }
 
 *{
@@ -20,32 +21,60 @@ body{
 
 #main{
     padding:0;
-    margin: 0;
+    margin-left: 15px;
     display:grid;
     grid-template-columns: repeat(5,20%);
-    background-color: white;
     position: fixed;
     top: 20px;
     width: 100%;
     height:100%;
-    gap: 10px;
+    gap: 20px;
 }
 .col{
     padding: 0;
+    background-color: white;
+    height: fit-content;
     word-break: break-word;
+    filter: drop-shadow(0 0 0.75rem black);
 
 }
 
 @media all and (max-width:600px){
     #main{
         grid-template-columns: repeat(2, 3fr);
+        left: 15px;
+        gap: 20px;
     }
+
+
+
+    .col{
+        padding: 0;
+        background-color: white;
+        height: fit-content;
+        width: fit-content;
+        word-break: break-word;
+    }
+    
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 0.825em;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+}
+
+.marbling_1:hover {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    type-decoration: none;
+    color: purple;
+    transition: 0.5s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
