@@ -40,18 +40,24 @@ body{
 }
 
 @media all and (max-width:600px){
+
+    #background_image{
+        overflow: auto;
+    }
+
     #main{
         grid-template-columns: repeat(2, 1fr) !important;
         left: 22px;
         gap: 10px !important;
         height: 50%;
+        width: 80%;
     }
 
 
 
     .col{
         padding: 0;
-        margin-right:40px;
+        margin: 0px;
         background-color: white;
         word-break: break-word;
     }

@@ -46,6 +46,10 @@ body{
 
 @media all and (max-width:600px){
 
+    #background_image{
+        overflow: auto;
+    }
+
 
     #main{
         display:grid;

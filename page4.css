@@ -46,16 +46,18 @@ body{
 
 @media all and (max-width:600px){
 
+    #background_image{
+        overflow: auto;
+    }
+
 
     #main{
         display:grid;
         grid-template-columns: 1fr !important;
         gap: 10px;        
         margin-left: 20px;
-        height:70% ;
+        height:45% ;
     }
-
-
 
     .col{
         padding: 0;    
@@ -65,15 +67,31 @@ body{
         overflow: auto;
     }
 
+    .col1{
+        width: fit-content !important;
+    }
 
+    .col2{
+        grid-column: 1/span 1 !important;
+        height: 100% !important;
+        overflow: auto;
+    
+    }
 
-
-   
+    .col3{
+        grid-column: 1/span 1 !important;
+        height: 300% !important;
+        overflow:auto;
+    }
  
 
     
  
 }
+
+    
+ 
+
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -109,17 +127,19 @@ a{
     height: fit-content !important;
 }
 .col2{
+    background-color: transparent !important;
     grid-column: 2/span 2;
     height: 45%;
     word-break: break-word;
     overflow: auto;
-    display: none;
 
 }
 
 .col3{
     background-color: transparent;
     grid-column: 4/span 2;
+    height: 100%;
+    overflow: auto;
 }
 
 .col4{
@@ -151,6 +171,7 @@ img{
     width: 1920px;
     height: auto;
     filter: hue-rotate(180deg) ;
+    z-index: -3;
 }
 
 
@@ -178,4 +199,15 @@ h2{
 
 .title{
     background-color: white;
+    width: fit-content;
+}
+
+.heading{
+    background-color: white;
+    width:fit-content;
+}
+
+.body{
+    background-color: white;
+    width:fit-content;
 }
